@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reserva  de sociedad</h1>
+
+    <p>Rellena el siguiente formulario par areservar la sociedad para un dia en concreto</p>
+
+    <form action="ok.php">
+        <fieldset>
+            <legend>Datos del usuario:</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <br><br>
+            <label>Eres socio?</label>
+            <br><br>
+            <input type="radio" id="si-socio" name="si-socio" value="si" checked>
+            <label for="si-socio">Si, soy socio</label>
+            <input type="radio" id="no-socio" name="no-socio" value="no">
+            <label for="no-socio">No soy socio</label>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <br><br>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña">
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de la Reserva</legend>
+            <label for="edad">Edad</label>
+            <select id="edad" name="edad">
+                <optgroup label="Edad">
+                    <option selected>Menor de 18</option>
+                    <option>entre 18 y 65</option>
+                    <option>mayor de 65</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label for="fecha-hora">Seleccionar la fecha y la hora de la reserva:</label>
+            <br><br>
+            <input type="date" id="fecha-hora"><input type="time">
+            <br><br>
+            <textarea name="comentario" id="comentario">Comentarios</textarea>
+        </fieldset>
+        <br>
+
+        <input type="checkbox" id="condiciones" name="condiciones" value="aceptar-condiciones">
+        <label for="condiciones">Acepto las condiciones</label>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
